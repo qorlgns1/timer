@@ -1,0 +1,119 @@
+@import url(./reset.css);
+
+body {
+  background: radial-gradient(
+      96.74% 276.79% at 3.59% 5.28%,
+      #f0f4ff 0%,
+      #a5b6ee 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.title {
+  margin-top: 72px;
+  text-align: center;
+}
+
+.title > img {
+  width: 244px;
+  height: 48px;
+}
+
+.container-timer {
+  margin: 60px auto 0;
+  background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  /* shadow */
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+  max-width: 400px;
+  min-height: 360px;
+}
+
+.container-timer > .title {
+  padding-top: 48px;
+  /* Bold_24px */
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.container-timer > .title::after {
+  content: "";
+  display: block;
+  margin: 23px auto 33px;
+  border-bottom: 1px solid #3d538a;
+  width: 312px;
+  height: 1px;
+}
+
+.container-time {
+  padding: 0 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-time input {
+  width: 53px;
+  background-color: transparent;
+  border: 0;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* .container-time > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.ccontainer-buttons {
+  margin-top: 40px;
+  padding: 0 82px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ccontainer-buttons button {
+  width: 112px;
+  height: 48px;
+}
+
+.box {
+  background-image: url(../images/box.svg);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ccontainer-buttons .button-start {
+  background-image: url(../images/button/start-disabled.svg);
+}
+
+.ccontainer-buttons .button-reset {
+  background-image: url(../images/button/reset-disabled.svg);
+}
+
+/* input type number 에서 화살표 제거 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
