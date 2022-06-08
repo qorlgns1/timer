@@ -8,27 +8,51 @@
     <link rel="stylesheet" href="./src/style/main.css" />
   </head>
   <body>
-    <h1 class="title">
+    <h1 class="logo">
       <img src="./src/images/weniv-logo.svg" alt="weniv 로고" />
     </h1>
     <section class="container-timer">
       <h2 class="title">TIMER</h2>
-      <div class="container-time">
-        <div class="container-hour box">
-          <input class="hour" type="number" value="00" />
-        </div>
-        <div class="container-minute box">
-          <input class="minute" type="number" value="00" />
-        </div>
-        <div class="container-second box">
-          <input class="second" type="number" value="10" />
-        </div>
-      </div>
-      <div class="ccontainer-buttons">
-        <button class="button-start" type="button"></button>
-        <button class="button-reset" type="button"></button>
+      <ol class="list-timebox">
+        <li>
+          <label for="timebox-hour" class="timebox-title">HRS</label>
+          <div class="timebox">
+            <input
+              class="timebox-input"
+              id="timebox-hour"
+              type="number"
+              value="00"
+            />
+          </div>
+        </li>
+        <li>
+          <label for="timebox-minute" class="timebox-title">MIN</label>
+          <div class="timebox">
+            <input
+              class="timebox-input"
+              id="timebox-minute"
+              type="number"
+              value="00"
+            />
+          </div>
+        </li>
+        <li>
+          <label for="timebox-second" class="timebox-title">SEC</label>
+          <div class="timebox">
+            <input
+              class="timebox-input"
+              id="timebox-second"
+              type="number"
+              value="00"
+            />
+          </div>
+        </li>
+      </ol>
+      <div class="container-buttons">
+        <button class="button-start on" type="button"></button>
+        <button class="button-reset on" type="button"></button>
       </div>
     </section>
+    <script src="./src/js/index.js"></script>
   </body>
-  <script src="./src/js/index.js"></script>
 </html>
